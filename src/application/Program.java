@@ -42,10 +42,15 @@ public class Program {
 		System.out.println("Inserted! New id = "+ newSeller.getId());
 		
 		 System.out.println("\n=================Seller Update");
-		  seller = sellerDao.findById(10);
+		  seller = sellerDao.findById(1);
 		  seller.setName("Pelé");
 		  sellerDao.update(seller);
 		System.out.println("Update realizado!");
+		
+		 System.out.println("\n=================Seller Delete");
+		  sellerDao.deleteById(210);
+		  
+		System.out.println("Delete realizado!");
 		
 	}
 
